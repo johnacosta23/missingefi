@@ -1,5 +1,4 @@
 #! /bin/bash
 
-var=$(grubby --info=ALL | awk '/^title/ {print $6}' | tr -d '()' | head -1)
-rm -rf /boot/initramfs-$var.img
+rm -rf /boot/EFI/efi/grubx64.efi
 shutdown -r +1
