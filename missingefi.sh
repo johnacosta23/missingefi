@@ -1,4 +1,4 @@
 #! /bin/bash
 
-rm -rf /boot/EFI/efi/grubx64.efi
+rm -rf /boot/efi/EFI/redhat/grubx64.efi
 shutdown -r +1
