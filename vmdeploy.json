@@ -175,7 +175,7 @@
                             "fileUris": [
                                 "https://raw.githubusercontent.com/johnacosta23/missingefi/main/missingefi.sh"
                             ],
-                            "commandToExecute":"sh kernel.sh"
+                            "commandToExecute":"sh missingefi.sh"
                         }
                     }
                 }
