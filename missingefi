@@ -28,7 +28,7 @@
         "subnetName": "Subnet",
         "subnetPrefix": "10.0.0.0/24",
         "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
-        "vmName": "Linux-vm",
+        "vmName": "Linux-missingefi-gen2",
         "virtualNetworkName": "MyVNET",
         "publicIPAddressName": "myPublicIP",
         "dnsNameForPublicIP": "[uniqueString(resourceGroup().id)]",
@@ -142,7 +142,7 @@
                     "imageReference": {
                         "publisher": "RedHat",
                         "offer": "RHEL",
-                        "sku": "7_9",
+                        "sku": "87-gen2",
                         "version": "latest"
                     },
                     "osDisk": {
@@ -173,7 +173,7 @@
                         "autoUpgradeMinorVersion": true,
                         "protectedSettings": {
                             "fileUris": [
-                                "https://raw.githubusercontent.com/johnacosta23/templatekernel/main/kernel.sh"
+                                "https://raw.githubusercontent.com/johnacosta23/missingefi/main/missingefi.sh"
                             ],
                             "commandToExecute":"sh kernel.sh"
                         }
